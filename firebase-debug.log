@@ -89,3 +89,9 @@ You're about to initialize a Firebase project in this directory:
 [info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
 [info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
 [info] 
+[debug] [2023-04-19T05:57:04.687Z] >>> [apiv2][query] GET https://api.github.com/repos/user/test-project/actions/secrets/public-key type=owner
+[debug] [2023-04-19T05:57:05.030Z] <<< [apiv2][status] GET https://api.github.com/repos/user/test-project/actions/secrets/public-key 401
+[debug] [2023-04-19T05:57:05.030Z] <<< [apiv2][body] GET https://api.github.com/repos/user/test-project/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-04-19T05:57:07.979Z] >>> [apiv2][query] GET https://api.github.com/repos/user/test-project/actions/secrets/public-key type=owner
+[debug] [2023-04-19T05:57:08.289Z] <<< [apiv2][status] GET https://api.github.com/repos/user/test-project/actions/secrets/public-key 401
+[debug] [2023-04-19T05:57:08.290Z] <<< [apiv2][body] GET https://api.github.com/repos/user/test-project/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
