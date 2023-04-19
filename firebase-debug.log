@@ -1,0 +1,21 @@
+[debug] [2023-04-19T05:47:19.806Z] ----------------------------------------------------------------------
+[debug] [2023-04-19T05:47:19.807Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\danus\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-04-19T05:47:19.808Z] CLI Version:   11.28.0
+[debug] [2023-04-19T05:47:19.808Z] Platform:      win32
+[debug] [2023-04-19T05:47:19.808Z] Node Version:  v18.15.0
+[debug] [2023-04-19T05:47:19.809Z] Time:          Wed Apr 19 2023 11:17:19 GMT+0530 (India Standard Time)
+[debug] [2023-04-19T05:47:19.809Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-04-19T05:47:19.814Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-19T05:47:19.815Z] > authorizing via signed-in user (danushathithya.24cs@licet.ac.in)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\danus\OneDrive\Documents\SportsWeb\test-project
+

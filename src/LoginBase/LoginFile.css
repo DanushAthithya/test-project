@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities; 
+
+  .LoginFile {
+    text-align: center;
+    padding: 10% 20% 10% 30% ;
+    font-family: "Montserrat";
+    color: #fff;
+    /* position: absolute;
+    top:0;
+    left: 10%; */
+  }
+
+  body{
+    width: 90%;
+    height: fit-content;
+    height: fit-content;
+    
+  }
+  
+  
+  #SignInButton{
+    border: rgb(62, 60, 60) solid;
+  }
+  
+  #Log_box{
+    /* position: absolute;
+    top: 20%;
+    left: 35%; */
+    /* background: -webkit-linear-gradient(#134106,#94e9a6 ); */
+    background: -webkit-linear-gradient(#040b3f,#545188 );
+    width: fit-content;
+    height: fit-content;
+    border: rgb(0, 0, 0) solid;
+    padding: 5% 3% 3% 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  
+  .commonButton{
+    color: black;
+    font-size: larger;
+    font-weight: 50px;
+    font-family: "Montserrat";
+    width: fit-content;
+    padding: 2% 5% 2% 5%;
+    height: fit-content;
+    border-radius: 10%;
+    border: rgb(62, 60, 60) solid;
+  }
+  #User{
+    padding: 2% 8% 2% 8%;
+    margin-right: 10%;
+  }
+  #Admin{
+    margin-left: 0%;
+  }
+  #logo{
+    width:20%;
+    height: 15%;
+  }
+  img{
+    width: 100%;
+    height: 100%;
+  }
+  .commonButton:hover
+  {
+    transform: scale(1.05);
+    transition: transform 0.25s ease-in-out;
+  }
+  #UserInf{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-evenly;
+  }
