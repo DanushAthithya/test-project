@@ -5,7 +5,6 @@ import './LoginFile.css';
 import jwt_decode from 'jwt-decode';
 import { useEffect, useState} from 'react';
 import axios from "axios";
-import logo from "./logo.png";
 
 
 
