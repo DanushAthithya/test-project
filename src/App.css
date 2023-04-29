@@ -56,11 +56,8 @@
 
   body {
     text-align: center;
-    padding-top: 2rem;
     width: 100%;
-    height: fit-content;
-    height: fit-content;
-
+    height: 100%;
   }
 
 
@@ -88,31 +85,33 @@
   }
   
 
-  .App{
-    text-align: center;
-    padding: 0% 35% 0% 35% ;
+  .App {
+    height: 100%;
+    width: 100%;
     font-family: "Montserrat";
     color: #fff;
-    /* position: absolute;
-    top:0;
-    left: 10%; */
   }
 
-  #Log_box{
-    /* position: absolute;
-    top: 20%;
-    left: 35%; */
-    /* background: -webkit-linear-gradient(#134106,#94e9a6 ); */
-    background-color: -webkit-linear-gradient(#091152,#545188 );
-    width: fit-content;
-    height: fit-content;
-    border: rgb(0, 0, 0) solid;
-    padding: 5% 0% 0% 3%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+   .App::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); /* fallback color with transparency */
+     background-image: url('bgpic.png');
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    z-index: -1;
+  }  
+
+  .Log_box{
+    width: 30%;
+    height: 60%;
+    margin-top: 2%;
   }
+
 
   #logo{
     width:30%;
@@ -136,12 +135,67 @@
     font-size: x-large;
   }
 
-  .in1{
+  .in1,.in2{
     font-size: smaller;
     width: 70%;
   }
 
-  .in2{
-    font-size: smaller;
-    width: 70%;
-  }
+
+  
+  @media only screen and (min-width: 768px) and (max-width: 1200px) {
+    body {
+      text-align: center;
+      width: 100%;
+      height: 100%;
+    }
+
+    .App {
+      height: 100%;
+      width: 100%;
+      font-family: "Montserrat";
+      color: #fff;
+    }
+    .App::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.5); /* fallback color with transparency */
+      background-image: url('bgpic.png');
+      filter: blur(8px);
+      -webkit-filter: blur(8px);
+      z-index: -1;
+    }
+
+    .Log_box{
+      width: 50%;
+      height: 80%;
+    }
+
+    }
+
+    @media only screen and (max-width: 767px) {
+      body {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+      }
+
+      .App {
+        height: 100%;
+        width: 100%;
+        font-family: "Montserrat";
+        color: #fff;
+      }
+
+      .Log_box{
+        width: 100%;
+        height: 100%;
+      }
+
+    }
+  
+   
+  
