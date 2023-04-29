@@ -1,6 +1,7 @@
 import { BsFillShieldLockFill, BsTelephoneFill } from "react-icons/bs";
 import { CgSpinner } from "react-icons/cg";
 import './phonever.css';
+import logo from './logo.png';
 import OtpInput from "otp-input-react";
 import { useState } from "react";
 import PhoneInput from "react-phone-input-2";
@@ -49,7 +50,6 @@ const PhoneVer = () =>
         toast.success("OTP sended successfully!");
       })
       .catch((error) => {
-        console.log(error);
         setLoading(false);
       });
   }
@@ -59,18 +59,16 @@ const PhoneVer = () =>
     window.confirmationResult
       .confirm(otp)
       .then(async (res) => {
-        console.log(res);
         setUser(res.user);
         setLoading(false);
       })
       .catch((err) => {
-        console.log(err);
         setLoading(false);
       });
   }
 
   return (
-    <section className="bg-emerald-500 flex items-center justify-center h-screen">
+    <section className="tot_box flex items-center justify-center h-screen">
       <div>
         <Toaster toastOptions={{ duration: 4000 }} />
         <div id="recaptcha-container"></div>
@@ -79,14 +77,17 @@ const PhoneVer = () =>
             👍Login Success
           </h2>
         ) : (
-          <div className="w-80 flex flex-col gap-4 rounded-lg p-4">
+          <div className="bg-blue-950 w-1/3 flex flex-col gap-4 rounded-lg p-4 in_box">
+            <div id="logo" className="mx-auto d-block w-full h-full">
+              <img src={logo} className="w-full h-full"/>
+            </div>
             <h1 className="text-center leading-normal text-white font-medium text-3xl mb-6">
-              Welcome to <br /> CODE A PROGRAM
+              Welcome to <br /> Tri2Champ
             </h1>
             {showOTP ? (
               <>
-                <div className="bg-white text-emerald-500 w-fit mx-auto p-4 rounded-full">
-                  <BsFillShieldLockFill size={30} />
+                <div className="bg-white text-blue-600 w-fit mx-auto p-4 rounded-full">
+                  <BsFillShieldLockFill className="text-blue-600" size={30} />
                 </div>
                 <label
                   htmlFor="otp"
@@ -105,7 +106,7 @@ const PhoneVer = () =>
                 ></OtpInput>
                 <button
                   onClick={onOTPVerify}
-                  className="bg-emerald-600 w-full flex gap-1 items-center justify-center py-2.5 text-white rounded"
+                  className="btn_send bg-blue-600 w-full flex gap-1 items-center justify-center py-2.5 text-white rounded"
                 >
                   {loading && (
                     <CgSpinner size={20} className="mt-1 animate-spin" />
@@ -116,7 +117,7 @@ const PhoneVer = () =>
             ) : (
               <>
                 <div className="bg-white text-emerald-500 w-fit mx-auto p-4 rounded-full">
-                  <BsTelephoneFill size={30} />
+                  <BsTelephoneFill className="text-blue-600" size={30} />
                 </div>
                 <label
                   htmlFor=""
@@ -127,7 +128,7 @@ const PhoneVer = () =>
                 <PhoneInput country={"in"} value={ph} onChange={setPh} />
                 <button
                   onClick={onSignup}
-                  className="bg-emerald-600 w-full flex gap-1 items-center justify-center py-2.5 text-white rounded"
+                  className="btn_send bg-blue-600 w-full flex gap-1 items-center justify-center py-2.5 text-white rounded"
                 >
                   {loading && (
                     <CgSpinner size={20} className="mt-1 animate-spin" />

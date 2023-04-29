@@ -1,7 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 .react-tel-input .form-control {
   @apply !w-full py-6 !text-base;
 }
@@ -11,4 +10,18 @@
 }
 .opt-container input {
   @apply !mr-0 flex-1 py-5 outline-none;
+}
+
+.tot_box{
+  background-image: url('Log_img.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.btn_send:hover{
+  background-color: black;
+}
+
+.in_box{
+  margin-left: 32%;
 }

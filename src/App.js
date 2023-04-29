@@ -3,7 +3,6 @@ import "./App.css";
 import { signInWithGoogle } from "./Firebase";
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import {app} from './Firebase';
-import { BsFillTelephoneFill } from "react-icons/bs";
 import { useState } from "react";
 import PhoneVer from './phonever';
 import logo from './logo.png'
@@ -44,7 +43,7 @@ createUserWithEmailAndPassword(auth, email, password)
   {
   return (
     <div className="App">
-          <div className="bg-gradient-to-r from-zinc-950 via-indigo-800 to-zinc-950 pb-4 Log_box mx-auto d-block">
+          <div className="bg-blue-950 pb-4 Log_box mx-auto d-block">   
             <br/>
             <br/>
             <div id="logo" className="mx-auto d-block">
@@ -67,7 +66,7 @@ createUserWithEmailAndPassword(auth, email, password)
             <br/>
             <br />
             <a className="button_Phn btn-success bg-white-900 rounded mb-8" href="/Phone">
-              <FaPhoneAlt className="text-blue-300" />
+              <FaPhoneAlt className="text-blue-600" />
               Sign In with Phone
             </a>
           </div>
